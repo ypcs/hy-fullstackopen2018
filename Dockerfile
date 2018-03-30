@@ -1,4 +1,4 @@
-FROM ypcs/node:latest
+FROM ypcs/node:upstream
 
 RUN \
     /usr/local/sbin/docker-upgrade && \
@@ -25,5 +25,6 @@ RUN mkdir -p "$(pwd)/${NPM_PACKAGES}" && \
     echo "PATH=\"\${PATH}:$(pwd)/${NPM_PACKAGES}/bin\"" >>${HOME}/.bashrc
 
 RUN npm install -g npx
+RUN npm install -g create-react-app
 
 CMD ["bash"]

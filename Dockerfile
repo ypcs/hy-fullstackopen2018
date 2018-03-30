@@ -7,6 +7,7 @@ RUN \
         git \
         less \
         source-highlight \
+        tree \
         vim \
         vim-scripts && \
     /usr/local/sbin/docker-cleanup

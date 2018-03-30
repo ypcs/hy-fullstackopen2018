@@ -1,4 +1,4 @@
-IMAGE = ypcs/mooc:hy-fullstack
+IMAGE = ypcs/misc:mooc-hy-fullstackopen2018
 
 all:
 
